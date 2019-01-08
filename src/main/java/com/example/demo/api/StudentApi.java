@@ -55,6 +55,14 @@ public class StudentApi {
 		return list;
 	}
 	
+	@GetMapping("/student/major")
+	public List<String> getAllMajor() {
+		List<String> list = new ArrayList<String>();
+		list.add("ITer");
+		list.add("Businessman");
+		return list;
+	}
+	
 	@PutMapping("/edit/{id}")
 	public ResponseEntity<Student> updateStudent(@PathVariable("id") long id, @RequestBody Student student) {
 		Optional<Student> opStudent = studentRepository.findById(id);
