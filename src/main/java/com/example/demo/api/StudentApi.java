@@ -55,7 +55,7 @@ public class StudentApi {
 		return list;
 	}
 	
-	@GetMapping("/student/major")
+	@GetMapping("/major")
 	public List<String> getAllMajor() {
 		List<String> list = new ArrayList<String>();
 		list.add("ITer");
